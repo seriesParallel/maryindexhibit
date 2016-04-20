@@ -109,8 +109,9 @@
                     div.style.top = "0px";
                     div.style.width = "100%";
                     div.style.height = "100%";
-                    div.style.backgroundImage = "url('images/stockPhoto.png')";
+                    div.style.backgroundImage = "url('images/watermarkSpell.png')";
                     div.style.backgroundPosition = "-42px 0px";
+                    div.style.opacity = ".6";
                     div.style.backgroundRepeat = "repeat";
                     div.style.backgroundAttachment = "scroll";
                     document.body.appendChild(div);
@@ -140,8 +141,8 @@
 
                     var format = '.png'
                     var urls = [
-  path + 'squareHands' + format, path + 'squareHands' + format,
-  path + 'squareHands' + format, path + 'squareHands' + format,
+  path + 'squareHands2' + format, path + 'squareHands2' + format,
+  path + 'squareHands' + format, path + 'squareHands2' + format,
   path + 'squareHands' + format, path + 'squareHands' + format
  ]
                     var textureCube = THREE.ImageUtils.loadTextureCube(urls)
@@ -170,20 +171,20 @@
                     //         //////////////////////////////////////////////////////////////////////////////////
                     //		Camera Controls							//
                     //////////////////////////////////////////////////////////////////////////////////
-                    //            var mouse = {
-                    //                x: .3,
-                    //                y: 0
-                    //            }
-                    //            document.addEventListener('mousemove', function (event) {
-                    //                mouse.x = (event.clientX / window.innerWidth) - 0.5
-                    //                mouse.y = (event.clientY / window.innerHeight) - 0.5
-                    //            }, false)
-                    //            onRenderFcts.push(function (delta, now) {
-                    //                camera.position.x += (mouse.x * 5 - camera.position.x) * (delta * 3)
-                    //                camera.position.y += (mouse.y * 10 - camera.position.y) * (delta * 3)
-                    //                camera.lookAt(scene.position)
-                    //            })
-                    //
+                                var mouse = {
+                                    x: -.4,
+                                    y: 0
+                                }
+                                document.addEventListener('mousemove', function (event) {
+                                    mouse.x = (event.clientX / window.innerWidth) - 0.5
+                                    mouse.y = (event.clientY / window.innerHeight) - 0.5
+                                }, false)
+                                onRenderFcts.push(function (delta, now) {
+                                    camera.position.x += (mouse.x * .8 - camera.position.x) * (delta * 3)
+                                    camera.position.y += (mouse.y * 2 - camera.position.y) * (delta * 3)
+                                    camera.lookAt(scene.position)
+                                })
+
 
                     //////////////////////////////////////////////////////////////////////////////////
                     //		add a skybox							//
@@ -227,14 +228,6 @@
                 <img src="images/screenReach.png">
             </div>
         </div>
-
-
-        <!--
-            <div id="hands2">
-            </div>
--->
-
-        <!--        </div>-->
 
 
     </div>
