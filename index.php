@@ -14,6 +14,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 
     <!-- Custom CSS -->
@@ -77,7 +79,7 @@
         }
     </script>
     <!-- Navigation -->
-    <?php include 'nav2.php'; ?>
+    <?php include 'nav4.php'; ?>
 </head>
 
 <body>
@@ -222,12 +224,14 @@
                 }
             </script>
         </div>
+<!--
 
         <div id="hands1">
             <div id="hands2">
                 <img src="images/screenReach.png">
             </div>
         </div>
+-->
 
 
     </div>

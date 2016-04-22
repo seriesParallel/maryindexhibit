@@ -1,17 +1,20 @@
 /*NAVIGATION*/
 
+body {
+    line-height: 1.42857143;
+}
+
 .navContainer {
     position: fixed;
     width: 100%;
     z-index: 10;
 }
 
-
 .navContainer2 {
     position: fixed;
     top: 65px;
     width: 100%;
-    height:70px;
+    height: 70px;
     z-index: 10;
 }
 
@@ -26,12 +29,20 @@
 .navItems {
     width: 100%;
     position: absolute;
-    margin: 0 0 0 0
-/*    right: 33%;*/
+    margin: 0 0 0 0;
 }
-.navItems .mybtn {
-    width: 32.9%;
+
+.tab-content {
 }
+
+.navItems .mybtn{
+    width: 32.8%;
+/*    line-height: .42857143;*/
+    float: left;
+
+}
+
+
 .navItems2 {
     width: 51%;
     position: absolute;
@@ -39,16 +50,16 @@
     left: 40%;
 }
 
-#myNav .mybtn {
-    margin: 5px 0px 0px 0px;
+ .mybtn {
     padding: 0px 5px 0px 5px;
 }
 
-
+/*
 #myNav2 .mybtn {
     margin: 5px 0px 0px 0px;
     padding: 0px 5px 0px 5px;
 }
+*/
 /*
 #bio{
     background: #E7B29F ;
@@ -60,14 +71,17 @@
     background: #E8BBA0 ;
 }
 */
-#bio{
-    background: #F2C6B6 ;
+
+#bio {
+    background: #F2C6B6;
 }
-#cv{
+
+#cv {
     background: #F5CDB8;
 }
-#contact{
-    background: #FFD0B5 ;
+
+#cntct {
+    background: #FFD0B5;
 }
 /*
 .navItems .mybtn:nth-of-type(4){
@@ -77,7 +91,61 @@
     background: #EECEB3;
 }
 */
-.mybtn {
+
+.myNav>li>a{
+    color: #ffffff;
+        text-align: center;
+    padding: 0;
+
+}
+
+.tab-content>.active {
+    display: block!important;
+    visibility: visible!important;
+}
+
+.tab-content>.tab-pane {
+     display: block;
+    visibility: hidden;
+}
+
+.tab-content>.mybtn>.active {
+    display: block!important;
+    visibility: visible!important;
+}
+
+.tab-content>.mybtn>.tab-pane {
+        display: block!important;
+
+    visibility: hidden!important;
+}
+
+
+/*Edit things inside panels here!*/
+.mybtn.tab-pane.active {
+    padding: 10px;
+}
+
+
+
+/*form stuff*/
+input[type=text],textarea {
+    border-radius: 4px;
+    background-color: #B5988C;
+    color: #ffffff;
+    border: none!important;
+}
+.submit-button.mybtn{
+    background-color: #ffffff;
+}
+/*-----------------------------*/
+
+.label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.mybtn, .label {
     -webkit-border-radius: 3;
     -moz-border-radius: 3;
     border-radius: 3px;
@@ -86,10 +154,12 @@
     -moz-box-shadow: 0px 1px 3px #d9d9d9;
     box-shadow: 0px 1px 3px #d9d9d9;
     background: #EBC6B0;
-/*    background: #E5B090;*/
+    /*    background: #E5B090;*/
+
     color: #ffffff;
     font-size: 18px;
-    padding: 1px 3px;
+    padding: 0px;
+    margin: 6px 5px 0px 0px;
     border: solid #f2e2dc 1px;
     text-decoration: none;
 }
@@ -147,14 +217,16 @@ body {
     background-image: url("../images/screenReach2.png");
     background-size: 100%;
     background-repeat: repeat;
-    z-index: -4;
+    z-index: -50;
 }
 /*stuck hands*/
 
 #hands2 {
     width: 100%;
-    height: 500px;;
+    height: 500px;
+    z-index: -50;
 }
+
 #hands2 img {
     padding: 0;
     margin-top: 10px;

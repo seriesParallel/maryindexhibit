@@ -24,17 +24,7 @@
                 </div>
             </div>
             <div class="navItems">
-                <!--            <div class="row">-->
-<!--
-                <a href="threed.php">
-                    <button type=input class=mybtn> 3D
-                    </button>
-                </a>
--->
-                <!--            </div>-->
-                <!--            </div>-->
-                <!--                            <div class="row">-->
-                <!--                               <div class="col-md-1">-->
+
                 <a href="video.php">
                     <button type=input class=mybtn> VIDEO
                     </button>

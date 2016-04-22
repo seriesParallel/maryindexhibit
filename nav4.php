@@ -1,27 +1,58 @@
-<!DOCTYPE html>
-<html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<!doctype html>
+
+<html>
 
 <head>
+    <meta charset="UTF-8">
+</head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>MARY SCAHILL DOT NET</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    </head>
 <body>
-    <!-- Navigation -->
-<p class="p1">&nbsp;</p>
+    <div class="navContainer">
+        <div id="myNav">
+
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <a href="index.php">
+                        <button type=input class=mybtn style="width:100%;">
+                            MARY SCAHILL DOT NET </button>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="navItems">
+                <!--
+
+                <a href="video.php">
+                    <button type=input class=mybtn> VIDEO
+                    </button>
+                </a>
+-->
+
+
+                <!-- Nav tabs -->
+                <ul class="nav myNav" role="tablist">
+
+                    <li class="mybtn" role="presentation"><a href="#bio" aria-controls="bio" role="tab" data-toggle="tab">BIO</a>
+                    </li>
+                    <li class="mybtn" role="presentation"><a href="#cv" aria-controls="cv" role="tab" data-toggle="tab">CV</a>
+                    </li>
+                    <li class="mybtn" role="presentation"><a href="#cntct" aria-controls="cntct" role="tab" data-toggle="tab">CNTCT</a>
+                    </li>
+                </ul>
+
+                <!--             Tab panes-->
+                <div id="myTabs" class="tab-content">
+                    <div role="tabpanel" class="mybtn tab-pane" id="bio">hey this is my bio                         <?php include 'internet.php'; ?>
+</div>
+
+
+
+
+                    <div role="tabpanel" class="mybtn tab-pane" id="cv"><p class="p1">&nbsp;</p>
 
 <p class="p1"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Education</span></span></p>
 
@@ -78,5 +109,48 @@ Creative Technologist, <a href="http://fakelove.tv/">Fake Love</a>, NYC</span></
 </div>
 
 
+
+
+
+                    <div role="tabpanel" class="mybtn tab-pane" id="cntct">info@maryscahill.net<br>
+
+			<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+<br/>
+				<label for="Tel">Tel:</label>
+				<input type="text" name="Tel" id="Tel" />
+<br/>
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+<br/>
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="5" cols="20" id="Message"></textarea>
+<br/>
+				<input type="submit" name="submit" value="Submit" class="submit-button mybtn" />
+			</form>
+
+			<div style="clear: both;"></div>
+
+	</div>
+
+                    <script>$('.nav a').click(function (e) {
+    var tab = $(this);
+    if(tab.parent('li').hasClass('active')){
+        window.setTimeout(function(){
+            $(".tab-pane").removeClass('active');
+            tab.parent('li').removeClass('active');
+        },1);
+    }
+});</script>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>

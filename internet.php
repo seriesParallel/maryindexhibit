@@ -18,7 +18,6 @@
     <link href="css/style.css" rel="stylesheet">
 
         <!-- Navigation -->
-    <?php include 'nav.php'; ?>
     </head>
 
 <body>
