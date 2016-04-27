@@ -71,26 +71,47 @@ body {
     background: #E8BBA0 ;
 }
 */
+/*
 
 #bio {
     background: #F2C6B6;
 }
+*/
+/*
 
 #cv {
     background: #F5CDB8;
 }
+*/
+/*
 
 #cntct {
     background: #FFD0B5;
 }
-/*
-.navItems .mybtn:nth-of-type(4){
-    background: #A57257;
+*/
+
+
+
+.mybtn:nth-of-type(1n+0){
+    background: #E8B593;
 }
-.navItems .mybtn:nth-of-type(5){
+
+.mybtn:nth-of-type(2n+0){
+background: #EDC9BB;
+}
+.mybtn:nth-of-type(3n+0){
+    background: #D7B49D;
+}
+.mybtn:nth-of-type(4n+0){
+    background: #F5CDB8;
+}
+.mybtn:nth-of-type(5n+0){
+    background: #F2C6B6;
+}
+
+#maryscahilldotnet{
     background: #EECEB3;
 }
-*/
 
 .myNav>li>a{
     color: #ffffff;
@@ -102,6 +123,8 @@ body {
 .tab-content>.active {
     display: block!important;
     visibility: visible!important;
+        background: #EECEB3;
+
 }
 
 .tab-content>.tab-pane {
@@ -123,10 +146,26 @@ body {
 
 /*Edit things inside panels here!*/
 .mybtn.tab-pane.active {
-    padding: 10px;
+    padding: 10px 43px;
 }
 
 
+/*cv stuff*/
+
+p.subject{
+    font-size: 14px;
+    line-height: 14px;
+}
+p.cvbody{
+    font-size: 13px;
+    line-height: 14px;
+}
+
+
+/*contact stuff*/
+#cntct{
+    text-align: center;
+}
 
 /*form stuff*/
 input[type=text],textarea {
@@ -165,13 +204,13 @@ input[type=text],textarea {
 }
 
 .mybtn:hover {
-    background: #ffffff;
-    background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
-    background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0);
-    background-image: -ms-linear-gradient(top, #ffffff, #f0f0f0);
-    background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);
-    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    background: #EECEB3;
     text-decoration: none;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+   background: #EDD9CE;
+
 }
 /* ^ NAVIGATION ^ */
 /*FULLSCREEN & CONTAINER*/

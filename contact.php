@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
-
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<title>AJAX Contact Form Demo</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>MARY SCAHILL DOT NET</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    </head>
+</head>
 <body>
-    <!-- Navigation -->
-    <?php include 'nav.php'; ?>
+	<div id="page-wrapper">
+	  <h1>AJAX Contact Form Demo</h1>
 
+	  <div id="form-messages"></div>
 
+		<form id="ajax-contact" method="post" action="mailer.php">
+			<div class="field">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="field">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
+
+			<div class="field">
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

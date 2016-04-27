@@ -14,7 +14,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
 
@@ -173,19 +173,19 @@
                     //         //////////////////////////////////////////////////////////////////////////////////
                     //		Camera Controls							//
                     //////////////////////////////////////////////////////////////////////////////////
-                                var mouse = {
-                                    x: -.4,
-                                    y: 0
-                                }
-                                document.addEventListener('mousemove', function (event) {
-                                    mouse.x = (event.clientX / window.innerWidth) - 0.5
-                                    mouse.y = (event.clientY / window.innerHeight) - 0.5
-                                }, false)
-                                onRenderFcts.push(function (delta, now) {
-                                    camera.position.x += (mouse.x * .8 - camera.position.x) * (delta * 3)
-                                    camera.position.y += (mouse.y * 2 - camera.position.y) * (delta * 3)
-                                    camera.lookAt(scene.position)
-                                })
+                    var mouse = {
+                        x: -.4,
+                        y: 0
+                    }
+                    document.addEventListener('mousemove', function (event) {
+                        mouse.x = (event.clientX / window.innerWidth) - 0.5
+                        mouse.y = (event.clientY / window.innerHeight) - 0.5
+                    }, false)
+                    onRenderFcts.push(function (delta, now) {
+                        camera.position.x += (mouse.x * .8 - camera.position.x) * (delta * 3)
+                        camera.position.y += (mouse.y * 2 - camera.position.y) * (delta * 3)
+                        camera.lookAt(scene.position)
+                    })
 
 
                     //////////////////////////////////////////////////////////////////////////////////
@@ -224,7 +224,7 @@
                 }
             </script>
         </div>
-<!--
+        <!--
 
         <div id="hands1">
             <div id="hands2">
