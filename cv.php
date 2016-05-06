@@ -15,9 +15,9 @@ Area of Study: Computer Science
 </p>
 
 <p class="subject">Web</p>
-<p class="cvbody">
+<center><p class="cvbody">
     <a href="http://www.maryscahill.net">Mary Scahill</a>  |  <a href="http://www.maryscahill.net/vyle/">Pump Fake Interactive Environment</a>  |  <a href="http://www.computersclub.org/draw/index.php?a_match=Mary+Scahill">Computers Club Drawing Society</a>  |  <a href="http://www.asciifriends.com/whois.html">Asciifriends.net</a>  |  <a href="http://recodeproject.com/artwork/v1n2kubus-serie">Recode Project</a>  |  <a href="https://twitter.com/labourofh8">Labour of Hate</a>
-</p>
+</p></center>
 
 <p class="subject">Presentation</p>
 <p class="cvbody">
@@ -40,7 +40,7 @@ Programming and Design: <a href="http://www.openbci.com/">OpenBCI Brooklyn, NY</
 Creative Technologist: <a href="http://fakelove.tv/">Fake Love, NYC</a>
 </p>
 
-<p class="subject">Press</p>
+<p class="subject">Press</p><center>
 <p class="cvbody">
     <a href="http://blog.newhive.com/vyle-releases-single-pump-fake-on-newhive/">New Hive</a>  |  <a href="http://dismagazine.com/blog/79725/premiere-pump-fake-by-vyle/">Dis</a>  |  <a href="http://www.papermag.com/inside-death-by-art-1427448705.html">Paper Mag</a>
-</p>
+</p></center>

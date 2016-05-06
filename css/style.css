@@ -161,6 +161,15 @@ p.cvbody{
     line-height: 14px;
 }
 
+.cvbody a {
+        color: white;
+    text-decoration: none;
+}
+.cvbody a:hover, a:focus {
+    color: white;
+    text-decoration: line-through;
+}
+
 
 /*contact stuff*/
 #cntct{
